@@ -2,10 +2,6 @@ import requests
 import os
 from twilio.rest import Client
 
-MY_API_KEY = "35741ecda8f40ac70194fbbb68dec766"
-account_sid = 'ACd992902117ed811872a1c5f8765030fa'
-auth_token = 'f0ef6f146067c12427045df365c0088c'
-
 parameters = {
     "lat":51.6636,
     "lon":16.0845,
@@ -33,7 +29,5 @@ if should_bring_umbrella:
     message = client.messages \
         .create(
         body="Weź ze sobą parasolkę!\nW przeciągu 12 godzin będzie padał deszcz lub śnieg ☔",
-        from_='+18596961072',
-        to='+48883992636'
     )
     print(message.status)
