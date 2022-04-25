@@ -28,6 +28,6 @@ if should_bring_umbrella:
     client = Client(account_sid, auth_token)
     message = client.messages \
         .create(
-        body="Weź ze sobą parasolkę!\nW przeciągu 12 godzin będzie padał deszcz lub śnieg ☔",
+        body="Take umbrella with you!☔",
     )
     print(message.status)
